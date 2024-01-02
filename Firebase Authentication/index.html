@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Authentication</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+    apiKey: "AIzaSyCfiOQuQGhwrzQem_wsDSJ73IMpqAAphWY",
+    authDomain: "authentication-13624.firebaseapp.com",
+    projectId: "authentication-13624",
+    storageBucket: "authentication-13624.appspot.com",
+    messagingSenderId: "228864091425",
+    appId: "1:228864091425:web:aebcfa85cf961726c40a60"
+  };
+  firebase.initializeApp(firebaseConfig);
+    </script>
+    <div class="container">
+      <h1>Sign up</h1>
+      <form action="" onsubmit="createAccount(this)">
+        <div class="info">
+          <input type="email" id="email" required>
+          <span></span>
+          <label>Enter Email</label>
+        </div>
+        <div class="info">
+          <input type="password" id="password" required>
+          <span></span>
+          <label>Enter Password</label>
+        </div>
+        <input type="button" name="" id="" value="Create Account" class="btn">
+        <div class="loginLink">
+          Already A Member ? <a href="">Login</a>
+        </div>
+      </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
