@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg , #2980b9 , #8e44ad);
+    font-family: 'Bad Script', cursive;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body .container{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.container h1{
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+    border-bottom: 1px solid silver;
+}
+.container{
+    padding: 40px;
+    box-sizing: border-box;
+}
+.container .info{
+    position: relative;
+    border-bottom: 1px solid #adadad;
+    margin: 30px 0px;
+}
+.info input{
+    width: 100%;
+    height: 40px;
+    padding: 0px 5px;
+    font-size: 16px;
+    background: none;
+    outline: none;
+    border: none;
+}
+.info label{
+    position: relative;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #adadad ;
+    font-size: 16px;
+    pointer-events: none;
+}
+.info span::before{
+    content: '';
+    position: absolute;
+    top: 58px;
+    left: 0px;
+    width: 0%;
+    height: 2px ;
+    background: #2691d9;
+    transition: .5s;
+}
+
+.info input:focus ~ label ,
+.info input:valid ~ label{
+    top: -50px;
+    color: #2691d9;
+}
+.info input:focus ~ span::before ,
+.info input:valid ~ span::before{
+    width: 100%;
+}
+
+.container .btn{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: #2691d9;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.container .btn:hover{
+    background-color: #1a608e;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+        background-color: black;
+    color: rgb(216, 212, 212);
+}
+
+.image{
+    width: 9100px;
+    height: 86px;
+    padding: 0px 5px;
+    font-size: 16px;
+    background: none;
+    outline: none;
+    border: none;
+    background-color: green;
+    text-align: center;
+}

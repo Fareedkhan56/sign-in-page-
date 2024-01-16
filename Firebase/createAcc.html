@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-storage-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyCfiOQuQGhwrzQem_wsDSJ73IMpqAAphWY",
+      authDomain: "authentication-13624.firebaseapp.com",
+      projectId: "authentication-13624",
+      storageBucket: "authentication-13624.appspot.com",
+      messagingSenderId: "228864091425",
+      appId: "1:228864091425:web:aebcfa85cf961726c40a60"
+    };
+    </script>
+    <div class="container">
+        <h1>Create Your Account</h1>
+          <div class="info">
+            <label>Upload Image</label>
+            <input type="file" id="image" accept="image/*" id="image">
+          </div>
+          <div class="info">
+            <input type="text" id="name" required>
+            <span></span>
+            <label>Enter Name</label>
+          </div>
+          <!-- <input type="button" name="" id="" value="Create Account" class="btn"> -->
+          <!-- <button onclick="create(this)">Create</button> -->
+          <div class="loginLink">
+            Already A Member ? <a href="./login.html">Login</a>
+          </div>
+      </div>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+      <script src="./index.js"></script>
+</body>
+</html>
